@@ -64,7 +64,6 @@ function App() {
   const checkEndGame = (newBoard) => {
     return newBoard.every((square) => square !== null)
   }
-
   const updateBoard = (index) => {
     if (board[index] || winner) return  //no actualizamos si ya hay algo o hay un ganador
     //actualizar la tabla
